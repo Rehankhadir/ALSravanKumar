@@ -1,0 +1,39 @@
+
+
+
+
+<div>
+  <img src="../assets/header.PNG" alt="header">
+</div>
+<div class="button-container"><button type="button" class="btn" (click)="startProgress()" >Start</button></div>
+<div id="toggle" class="toggle" (click)="toggle()">
+  <img id="toggle-image" src="../assets/white_triangle.png" />
+</div>
+<div
+  class="offcanvas"
+  id="offcanvasPopup"
+  aria-labelledby="offcanvasLabel"
+  tabindex="-1"
+  aria-hidden="true"
+ 
+>
+  <div class="left-box" >
+    <img src="../assets/left_box.png" />
+  </div>
+  <div class="offcanvas-body">
+    <h5 id="offcanvasLabel">
+      Migrating Data to selected environment<span style="float: right">{{ progress }} %</span>
+    </h5>
+
+    <div class="progress">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        style="width: 0%"
+        id="progressBar"
+      ></div>
+    </div>
+  </div>
+</div>
+
+
